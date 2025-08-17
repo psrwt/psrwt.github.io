@@ -12,7 +12,7 @@ export default function Home() {
 
   const sectionRefs = {
     home: useRef<HTMLElement>(null),
-    experience: useRef<HTMLElement>(null),
+    experience: useRef<HTMLElement>(null),  
     skills: useRef<HTMLElement>(null),
     projects: useRef<HTMLElement>(null),
   };
