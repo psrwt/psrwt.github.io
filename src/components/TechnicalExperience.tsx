@@ -60,7 +60,7 @@ const ExperienceItem: FC<ExperienceItemProps> = ({ experience, isLast }) => {
         <div className="border-2 border-gray-100 hover:shadow-sm hover:shadow-gray-200 hover:border-gray-200 transition-all duration-500 rounded-lg p-3 sm:p-4">
           <div className="flex justify-between items-start cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
             <div>
-              <h3 className="font-bold text-gray-800 text-sm sm:text-base">{experience.company}</h3>
+              <h3 className="font-bold text-gray-700 text-sm sm:text-base">{experience.company}</h3>
               {experience.roles.map((role, i) => (
                 <p key={i} className="text-xs sm:text-sm text-gray-800">{role}</p>
               ))}

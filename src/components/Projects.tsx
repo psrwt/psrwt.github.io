@@ -32,7 +32,7 @@ const projectsData: Project[] = [
         description: 'A scalable, real-time chat platform using the MERN stack and Socket.IO. Features secure JWT-based authentication, session management, and image sharing functionality with Multer for file uploads.',
         tags: ['React.js', 'Node.js', 'MongoDB', 'Socket.IO', 'JWT'],
         visitLink: 'https://chat-app-du2i.onrender.com/',
-        sourceUrl: 'https://github.com/PraveenSRawatGithub/chat-app',
+        sourceUrl: 'https://github.com/psrwt/chat-app',
     },
     {
         title: 'Weather Checker',
@@ -40,7 +40,7 @@ const projectsData: Project[] = [
         description: 'A real-time weather application that delivers accurate forecasts for any country and its cities worldwide. It provides up-to-the-minute temperature, humidity, wind speed, and condition updates.',
         tags: ['React.js', 'Weather API'],
         visitLink: 'https://weatherweb-react-app.netlify.app/',
-        sourceUrl: 'https://github.com/PraveenSRawatGithub/weather-react-app',
+        sourceUrl: 'https://github.com/psrwt/weather-react-app',
     },
 ];
 

@@ -20,7 +20,7 @@ const Hero: NextPage = () => {
                     <h1 className="text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 text-center md:text-left">
                         Praveen Singh Rawat
                     </h1>
-                    <p className="text-sm sm:text-base text-gray-600 mt-2 text-center md:text-left">
+                    <p className="text-sm sm:text-base text-gray-700 mt-2 text-center md:text-left">
                         AI developer building and scaling full-stack applications powered by generative models to solve real business problems.
                     </p>
                     <div className="flex items-center justify-center md:justify-start space-x-4 mt-4 sm:mt-6 text-gray-500">
@@ -38,7 +38,7 @@ const Hero: NextPage = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="View CV (opens in a new tab)"
-                            className="flex gap-1 items-center border border-gray-300 px-2 py-1 rounded-lg text-gray-700 hover:text-gray-900 cursor-pointer transition-transform duration-200 hover:scale-105 shadow-sm hover:shadow-md"
+                            className="flex gap-1 text-sm items-center border border-gray-300 px-1 sm:px-2 py-1 rounded-lg text-gray-700 hover:text-gray-900 cursor-pointer transition-transform duration-200 hover:scale-105 shadow-sm hover:shadow-md"
                         >
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5">
                                 <path d="M16.3891 8.11096L8.61091 15.8891" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

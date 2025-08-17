@@ -114,7 +114,7 @@ const navItems: (NavItem | NavDivider)[] = [
   { id: "skills", name: "Skills", href: "#skills", icon: <StackIcon /> },
   { id: "projects", name: "Projects", href: "#projects", icon: <ProjectsIcon /> },
   { type: "divider" },
-  { id: "github", name: "GitHub", href: "https://github.com/PraveenSRawatGithub", icon: <GitHubIcon />, external: true },
+  { id: "github", name: "GitHub", href: "https://github.com/psrwt", icon: <GitHubIcon />, external: true },
   { id: "linkedin", name: "LinkedIn", href: "https://linkedin.com/in/praveensinghrawat", icon: <LinkedInIcon />, external: true },
 ];
 
@@ -201,12 +201,12 @@ export function FloatingNav({
                 {activeId === nav.id && (
                   <motion.div
                     layoutId="active-indicator"
-                    className="absolute inset-0 rounded-full bg-gradient-to-tr from-indigo-200 to-indigo-400 shadow-lg shadow-indigo-300/40"
+                    className="absolute inset-0 rounded-full bg-gradient-to-tr from-green-200 to-green-400 shadow-lg shadow-indigo-300/40"
                     transition={{ type: "spring", stiffness: 300, damping: 25 }}
                   />
                 )}
                 <span
-                  className={`relative z-10 transition-colors duration-300 ${activeId === nav.id ? "text-indigo-700" : "text-slate-500 hover:text-slate-900"
+                  className={`relative z-10 transition-colors duration-300 ${activeId === nav.id ? "text-green-700" : "text-slate-500 hover:text-slate-900"
                     }`}
                 >
                   {nav.icon}
@@ -272,3 +272,5 @@ export function FloatingNav({
     </>
   );
 }
+
+
