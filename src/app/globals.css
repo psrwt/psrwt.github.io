@@ -1,0 +1,64 @@
+/* 1. Use the standard Tailwind directives */
+@import "tailwindcss";
+
+/* 2. Define your theming variables for light and dark mode */
+:root {
+  /* Default (light theme) variables */
+  --background: #ffffff;
+  --foreground: #111827; /* A slightly softer black like Tailwind's gray-900 */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark theme variables */
+    --background: #0a0a0a;
+    --foreground: #f3f4f6; /* A slightly softer white like Tailwind's gray-100 */
+  }
+}
+
+/* 3. Apply the base styles to the body */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  /* You can set a default font here, but it's often better to manage this in tailwind.config.js */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 4. Enable smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 5. Define all custom animations and utility classes in a single @layer block */
+@layer utilities {
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Classes to apply the animations */
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.3s ease-out forwards;
+  }
+}
