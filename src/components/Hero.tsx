@@ -28,10 +28,13 @@ const Hero: NextPage = () => {
                             <img src="/gmail.png" alt="Email Icon" className="object-cover w-6 h-6 sm:w-7 sm:h-7 transition-transform duration-200 hover:scale-110" />
                         </a>
                         <a href="https://github.com/psrwt" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:text-gray-900">
-                            <img src="/github.png" alt="GitHub Icon" className="object-cover w-6 h-6 sm:w-7 sm:h-7 transition-transform duration-200 hover:scale-110" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub Icon" className="object-cover w-6 h-6 sm:w-7 sm:h-7 transition-transform duration-200 hover:scale-110" />
                         </a>
                         <a href="https://linkedin.com/in/praveensinghrawat" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-gray-900">
-                            <img src="/linkedin.png" alt="LinkedIn Icon" className="object-cover w-6 h-6 sm:w-7 sm:h-7 transition-transform duration-200 hover:scale-110" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="LinkedIn Icon" className="object-cover w-6 h-6 sm:w-7 sm:h-7 transition-transform duration-200 hover:scale-110" />
+                        </a>
+                        <a href="https://leetcode.com/u/praveensinghrawat" target="_blank" rel="noopener noreferrer" aria-label="Leetcode" className="hover:text-gray-900">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/leetcode/leetcode-original.svg" alt="Leetcode Icon" className="object-cover w-6 h-6 sm:w-7 sm:h-7 transition-transform duration-200 hover:scale-110" />
                         </a>
                         <a
                             href="/resume.pdf"
