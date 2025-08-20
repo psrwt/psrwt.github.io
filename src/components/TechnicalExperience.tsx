@@ -16,7 +16,7 @@ const experiencesData: Experience[] = [
     logo: "/cwxai_logo.png",
     company: 'CWxAI.in',
     roles: ['Full Stack Developer'],
-    date: 'Jan 2025 – Present',
+    date: 'Jan 2025 – May 2025',
     description: [
       'An AI-driven platform that automates startup validation using Retrieval-Augmented Generation (RAG) and real-time data sources',
       'Led frontend development and user interface design using Next.js, ensuring a responsive and intuitive user experience',
