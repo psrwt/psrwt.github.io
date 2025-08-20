@@ -37,7 +37,7 @@ const Hero: NextPage = () => {
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/leetcode/leetcode-original.svg" alt="Leetcode Icon" className="object-cover w-6 h-6 sm:w-7 sm:h-7 transition-transform duration-200 hover:scale-110" />
                         </a>
                         <a
-                            href="/resume.pdf"
+                            href="/praveen_resume.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="View CV (opens in a new tab)"
