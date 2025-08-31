@@ -13,6 +13,14 @@ interface Project {
 
 const projectsData: Project[] = [
     {
+        title: 'Multilingual Voice Sales Assistant',
+        date: 'Aug 2025 - Present',
+        description: 'A sophisticated AI-powered multilingual voice assistant for sales, featuring real-time speech-to-text, multilingual response generation, and text-to-speech capabilities.',
+        tags: ['Murf AI', 'Pinecone', 'Langchain', 'FastAPI', 'React'],
+        visitLink: 'https://salesagent.codewhy.in/',
+        sourceUrl: 'https://github.com/codewhyofficial/building-on-murf-challenge'
+    },
+    {
         title: 'CWxAI.in',
         date: 'Jan 2025 – Present',
         description: 'An AI platform that automates startup validation by transforming a user idea into a comprehensive report. Its RAG pipeline dynamically scrapes and analyzes data from hundreds of real-time sources, breaking the concept down into key areas like competitive landscape, finances, and strategic insights.',
