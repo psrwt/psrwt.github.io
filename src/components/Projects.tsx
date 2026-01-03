@@ -4,7 +4,6 @@ import React from 'react';
 // --- Data Structure for Projects ---
 interface Project {
     title: string;
-    date: string;
     description: string;
     tags: string[];
     sourceUrl?: string;
@@ -13,30 +12,26 @@ interface Project {
 
 const projectsData: Project[] = [
     {
-        title: 'Multilingual Voice Sales Assistant',
-        date: 'Aug 2025 - Present',
-        description: 'A sophisticated AI-powered multilingual voice assistant for sales, featuring real-time speech-to-text, multilingual response generation, and text-to-speech capabilities.',
+        title: 'Conversational Sales Agent (Multilingual, Voice + Text)',
+        description: 'Intelligent conversational sales agent designed to handle negotiation-driven interactions using semantic vector search and LLM-based reasoning. The system retrieves relevant context from vector databases to understand intent, recommend suitable options, and generate persuasive, context-aware responses, implemented as a full-stack application with a FastAPI backend and React frontend supporting multilingual interactions.',
         tags: ['Murf AI', 'Pinecone', 'Langchain', 'FastAPI', 'React'],
         visitLink: 'https://salesagent.codewhy.in/',
         sourceUrl: 'https://github.com/codewhyofficial/building-on-murf-challenge'
     },
     {
         title: 'CWxAI.in',
-        date: 'Jan 2025 – Present',
-        description: 'An AI platform that automates startup validation by transforming a user idea into a comprehensive report. Its RAG pipeline dynamically scrapes and analyzes data from hundreds of real-time sources, breaking the concept down into key areas like competitive landscape, finances, and strategic insights.',
+        description: 'An AI-powered startup validation platform that transforms a user’s idea into a structured business report using Retrieval-Augmented Generation (RAG). The platform dynamically scrapes and analyzes real-time data from hundreds of sources to generate insights across competitive landscape, financial feasibility, and strategy, and presents them through a responsive, production-grade web interface with secure payment integration.',
         tags: ['Next.js', 'Flask', 'RAG', 'Web Scraping', 'Razorpay', 'LLM'],
         visitLink: 'https://www.cwxai.in/',
     },
     {
-        title: 'Content Automation System',
-        date: 'Apr 2025 - Present',
+        title: 'Intelligent Blog Content Pipeline (RAG + LLMs) ',
         description: 'An end-to-end automated content generation system that scrapes trending topics from Google Alerts and uses an AI pipeline (GPT/Gemini) to generate outlines, summarize content, and draft SEO-optimized articles.',
         tags: ['Python', 'React.js', 'Flask', 'Web Scraping', 'LLM', 'SEO'],
         visitLink: 'https://blog.codewhy.in/',
     },
     {
         title: 'Chat Application',
-        date: 'Feb 2024',
         description: 'A scalable, real-time chat platform using the MERN stack and Socket.IO. Features secure JWT-based authentication, session management, and image sharing functionality with Multer for file uploads.',
         tags: ['React.js', 'Node.js', 'MongoDB', 'Socket.IO', 'JWT'],
         visitLink: 'https://chat-app-du2i.onrender.com/',
@@ -44,7 +39,6 @@ const projectsData: Project[] = [
     },
     {
         title: 'Weather Checker',
-        date: 'Sep 2023',
         description: 'A real-time weather application that delivers accurate forecasts for any country and its cities worldwide. It provides up-to-the-minute temperature, humidity, wind speed, and condition updates.',
         tags: ['React.js', 'Weather API'],
         visitLink: 'https://weatherweb-react-app.netlify.app/',
@@ -71,7 +65,6 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
     <div className="flex flex-col h-full bg-white rounded-2xl border border-slate-200 p-6 transition-all duration-300 hover:shadow-xl hover:border-slate-300">
         <div className="flex-grow">
             <h3 className="text-lg font-bold text-slate-800">{project.title}</h3>
-            <p className="mt-1 text-sm text-slate-500">{project.date}</p>
 
             <p className="mt-4 text-sm text-slate-600 leading-relaxed font-sans">{project.description}</p>
         </div>
