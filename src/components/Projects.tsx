@@ -12,17 +12,18 @@ interface Project {
 
 const projectsData: Project[] = [
     {
-        title: 'Conversational Sales Agent (Multilingual, Voice + Text)',
-        description: 'Intelligent conversational sales agent designed to handle negotiation-driven interactions using semantic vector search and LLM-based reasoning. The system retrieves relevant context from vector databases to understand intent, recommend suitable options, and generate persuasive, context-aware responses, implemented as a full-stack application with a FastAPI backend and React frontend supporting multilingual interactions.',
+        title: 'Negotia - Multilingual Conversational Sales Agent',
+        description: 'Developed a multilingual conversational sales agent capable of understanding voice and text inputs. Delivers personalized, context-aware interactions and retrieves relevant information in real time.',
         tags: ['Murf AI', 'Pinecone', 'Langchain', 'FastAPI', 'React'],
-        visitLink: 'https://salesagent.codewhy.in/',
-        sourceUrl: 'https://github.com/codewhyofficial/building-on-murf-challenge'
+        visitLink: 'https://negotia-flame.vercel.app/',
+        sourceUrl: 'https://github.com/psrwt/negotia'
     },
     {
-        title: 'CWxAI.in',
-        description: 'An AI-powered startup validation platform that transforms a user’s idea into a structured business report using Retrieval-Augmented Generation (RAG). The platform dynamically scrapes and analyzes real-time data from hundreds of sources to generate insights across competitive landscape, financial feasibility, and strategy, and presents them through a responsive, production-grade web interface with secure payment integration.',
+        title: 'CWxAI',
+        description: 'AI-powered startup validation platform that turns ideas into structured business reports using RAG. It analyzes real-time data across competition, finance, and strategy, delivering insights via a responsive, production-ready web interface.',
         tags: ['Next.js', 'Flask', 'RAG', 'Web Scraping', 'Razorpay', 'LLM'],
-        visitLink: 'https://www.cwxai.in/',
+        visitLink: 'https://cwxai.vercel.app/',
+        sourceUrl: 'https://github.com/psrwt/cwxai-client'
     },
     {
         title: 'Intelligent Blog Content Pipeline (RAG + LLMs) ',

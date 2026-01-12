@@ -11,26 +11,28 @@ interface Experience {
   summary: string;
   bullets: string[];
   techStack: string;
+  link?: string;
 }
 
 
 const experiencesData: Experience[] = [
   {
     logo: "/cwxai_logo.png",
-    company: "CWxAI (cwxai.in)",
+    company: "CWxAI (Startup Venture)",
     role: "Full-Stack AI Developer",
-    date: "Jan 2025 – May 2025",
+    date: "Jan 2025 – Jul 2025",
+    link: "https://cwxai.vercel.app/",
     summary:
-      "An AI-powered startup validation platform that automates market and idea analysis using Retrieval-Augmented Generation (RAG) and real-time external data sources.",
+      "AI-powered startup validation platform using Retrieval-Augmented Generation (RAG) and real-time external data to automate market and idea analysis.",
     bullets: [
-      "Built and shipped an end-to-end AI system, combining LLM-driven insight generation with structured data pipelines",
-      "Architected backend APIs to transform AI-generated insights into structured JSON formats for frontend consumption",
-      "Developed a responsive, production-grade frontend using Next.js, rendering structured reports into interactive dashboards with visuals and charts",
-      "Integrated Razorpay for secure, international payment processing",
-      "Contributed to scaling the platform to 100+ users across 12 countries, generating 230+ automated AI reports post-launch",
+      "Shipped an end-to-end AI system combining LLM-driven insights with structured data pipelines.",
+      "Built backend APIs to transform AI outputs into structured JSON for frontend consumption.",
+      "Developed a production-ready Next.js frontend with interactive dashboards and visual reports.",
+      "Integrated Razorpay for secure payment processing.",
+      "Enabled early adoption with 100+ users across 12 countries, generating 230+ automated reports.",
     ],
     techStack:
-      "Next.js, Node.js / FastAPI, RAG, LLMs (OpenAI/Gemini), Vector Databases, Razorpay",
+      "Next.js, Flask, RAG, LLMs, MongoDB, Razorpay",
   },
   {
     logo: "/nic_logo.png",
@@ -38,13 +40,12 @@ const experiencesData: Experience[] = [
     role: "Full-Stack Developer Intern",
     date: "June 2024 – July 2024",
     summary:
-      "Worked on a government-grade inspector tracking system, focused on security, data integrity, and real-time operations.",
+      "Worked on a government project inspector tracking system (ITS), focused on security, data integrity, and real-time operations.",
     bullets: [
-      "Modernized the Inspector Tracking System (ITS) using Laravel, MySQL, JavaScript, HTML, and CSS",
+      "Modernized the Inspector Tracking System (ITS) using Laravel, MySQL, JavaScript, and HTML/CSS",
       "Implemented secure authentication and role-based access control for sensitive government data",
       "Designed intuitive dashboards for inspectors and administrators, improving usability and workflow efficiency",
       "Built document upload and access-controlled storage for official records",
-      "Developed features for inspector and admin management, including profile creation, updates, and real-time data synchronization",
     ],
     techStack: "Laravel, MySQL, JavaScript, HTML/CSS",
   },
@@ -83,9 +84,32 @@ const ExperienceItem: FC<{ experience: Experience; isLast: boolean }> = ({
             onClick={() => setIsOpen(!isOpen)}
           >
             <div>
-              <h3 className="font-bold text-gray-800">
+              <h3 className="font-bold text-gray-800 flex items-center gap-2">
                 {experience.company}
+
+                {experience.link && (
+                  <a
+                    href={experience.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="
+  inline-flex items-center gap-1
+  rounded-full border border-gray-300
+  px-3 py-1
+  text-xs font-medium text-gray-700
+  hover:bg-gray-100 hover:border-gray-400
+  transition
+"
+
+
+                  >
+                    visit <span className="text-xs">↗</span>
+                  </a>
+                )}
+
               </h3>
+
               <p className="text-sm text-gray-700">{experience.role}</p>
             </div>
 
@@ -94,9 +118,8 @@ const ExperienceItem: FC<{ experience: Experience; isLast: boolean }> = ({
                 {experience.date}
               </span>
               <span
-                className={`transform transition-transform ${
-                  isOpen ? "rotate-90" : ""
-                }`}
+                className={`transform transition-transform ${isOpen ? "rotate-90" : ""
+                  }`}
               >
                 ▶
               </span>
@@ -108,9 +131,8 @@ const ExperienceItem: FC<{ experience: Experience; isLast: boolean }> = ({
           </p>
 
           <div
-            className={`transition-all duration-500 overflow-hidden ${
-              isOpen ? "max-h-[600px] mt-4" : "max-h-0"
-            }`}
+            className={`transition-all duration-500 overflow-hidden ${isOpen ? "max-h-[600px] mt-4" : "max-h-0"
+              }`}
           >
             <ul className="list-disc pl-5 space-y-2 text-sm text-gray-600">
               {experience.bullets.map((item, idx) => (
