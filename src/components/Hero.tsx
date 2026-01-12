@@ -38,7 +38,7 @@ const Hero: NextPage = () => {
                         </a> */}
                         <a
                             href="/resume.pdf"
-                            target="_blank"
+                            target="_blank" 
                             rel="noopener noreferrer"
                             aria-label="View CV (opens in a new tab)"
                             className="flex gap-1 text-sm items-center border border-gray-300 px-1 sm:px-2 py-1 rounded-lg text-gray-700 hover:text-gray-900 cursor-pointer transition-transform duration-200 hover:scale-105 shadow-sm hover:shadow-md"
