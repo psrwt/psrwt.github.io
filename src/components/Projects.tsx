@@ -26,6 +26,13 @@ const projectsData: Project[] = [
         sourceUrl: 'https://github.com/psrwt/cwxai-client'
     },
     {
+        title: 'Smart Doctor-Patient Assistant MCP)',
+        description: 'Built a agentic AI system using Model Context Protocol (MCP) for dynamic tool discovery. Features a Llama 3.3 multi-turn agent that automates clinical scheduling and generates patient history summaries with real-time Slack and Google Calendar synchronization.',
+        tags: ['MCP', 'FastAPI', 'React', 'PostgreSQL'],
+        visitLink: 'https://smart-doctor-patient-assistant.vercel.app', // Replace with your link
+        sourceUrl: 'https://github.com/psrwt/smart-doctor-patient-assistant' // Replace with your link
+    },
+    {
         title: 'Intelligent Blog Content Pipeline (RAG + LLMs) ',
         description: 'An end-to-end automated content generation system that scrapes trending topics from Google Alerts and uses an AI pipeline (GPT/Gemini) to generate outlines, summarize content, and draft SEO-optimized articles.',
         tags: ['Python', 'React.js', 'Flask', 'Web Scraping', 'LLM', 'SEO'],
